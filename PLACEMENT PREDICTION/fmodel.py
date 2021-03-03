@@ -7,7 +7,7 @@ Created on Wed Feb 17 20:14:02 2021
 
 import pandas as pd
 
-placement = pd.read_csv('E:\SEMESTER6\SDP\ASSETS\Placement_Data_Full_Class.csv')
+placement = pd.read_csv('Placement_Data_Full_Class.csv')
 placement_copy = placement.copy()
 placement_copy['salary'].fillna(value=0, inplace=True)
 placement_copy.drop(['sl_no','ssc_b','hsc_b'], axis = 1,inplace=True) 
