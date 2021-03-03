@@ -75,7 +75,7 @@ df.reset_index(inplace=True)
 out = df.to_dict('records')
 
 import pymongo
-client = pymongo.MongoClient("mongodb+srv://admin:admin0706@universityplacementport.kfndr.mongodb.net/upp-db?retryWrites=true&w=majority")
+client = pymongo.MongoClient(url_to_db)
 db = client['upp-db']
 plc_info = db['aws-placement']
 
@@ -178,7 +178,7 @@ df.reset_index(inplace=True)
 out = df.to_dict('records')
 
 import pymongo
-client = pymongo.MongoClient("mongodb+srv://admin:admin0706@universityplacementport.kfndr.mongodb.net/upp-db?retryWrites=true&w=majority")
+client = pymongo.MongoClient(url_to_db)
 db = client['upp-db']
 plc_info = db['naukri-placement']
 
@@ -275,7 +275,7 @@ df.reset_index(inplace=True)
 out = df.to_dict('records')
 
 import pymongo
-client = pymongo.MongoClient("mongodb+srv://admin:admin0706@universityplacementport.kfndr.mongodb.net/upp-db?retryWrites=true&w=majority")
+client = pymongo.MongoClient(url_to_db)
 db = client['upp-db']
 plc_info = db['google-placement']
 
